@@ -29,4 +29,4 @@
 /config/master.key
 
 # Ignore schema
-./db/schema.rb
+/db/schema.rb
