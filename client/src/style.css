@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+/*  Body */
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  color: #333;
+  /* background-color: #fff; */
+  background-image: linear-gradient(to left , white , rgba(192, 192, 192, 0.5));
+}
+/*  Form Sets */
+form {
+  width: 500px;
+  height: auto;
+  border-radius: 15px;
+  border: #333 solid 1px;
+  padding: 60px;
+  margin: 100px auto 0;
+}
+
+/* titile */
+/* main Tag */
+
+.mainTitle {
+  color: #555de8;
+  text-align: center;
+  font-size: 38px;
+  margin-bottom: 60px;
+}
+#title{
+  color: #5555d8;
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+/*  Manage "a" Tags */
+a{
+  text-decoration: none;
+  color: #333;
+}
