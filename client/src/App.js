@@ -7,7 +7,7 @@ import NavBar from './NavBar.js';
 import {Route, Routes} from 'react-router-dom';
 import Home from './Home.js';
 import Products from './Products.js';
-// import About from './About.js';
+import About from './About.js';
 import Footer from './Footer.js';
 import Login from './Login.js';
 import Signup from './Signup.js';
@@ -22,8 +22,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />}/>
         <Route path="/Products" element={<Products />}/> 
-         {/* <Route path="/About" element={<About />}/> */}
-        {/* <Route path="/Footer" element={<Footer />}/>  */}
+         <Route path="/About" element={<About />}/>
         <Route path="/Login" element={<Login />}/>
         <Route path="/Signup" element={<Signup />}/> 
         <Route path="/Cart" element={<Cart />}/>
