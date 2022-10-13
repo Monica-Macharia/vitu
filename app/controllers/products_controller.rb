@@ -6,17 +6,15 @@ rescue_from ActiveRecord::RecordNotFound, with: :render_not_found_response
     end
 
     def show
-    end
-
-    def update
+       product = Product.find_by(id: params[:id])
+       if product
+            render json: product
+       else
+            render json: {error: "Product not found"}, status: :not_found
+       end
     end
 
     private
-
-    def find_product
-        product = Product.find_by(id: params[:id])
-    end
-
     def render_not_found_response
         render json: { error: "Product not found" }, status: :not_found
     end
