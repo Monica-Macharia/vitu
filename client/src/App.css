@@ -36,10 +36,10 @@
     transform: rotate(360deg);
   }
 }
-body {
+/* div.navbar {
   background-image: url("https://images.pexels.com/photos/1884584/pexels-photo-1884584.jpeg?auto=compress&cs=tinysrgb&w=600");
   background-size: 100%;
-}
+} */
 nav.elements{
   float: right;
   margin-top: -43px;
@@ -48,6 +48,10 @@ nav.elements{
 }
 h1.title{
   margin-left: 90px;
+}
+a{
+  list-style: none;
+  text-decoration: none;
 }
 a.active{
   /* padding: 650px; */
