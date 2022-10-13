@@ -5,35 +5,7 @@ import CartItem from './CartItems';
 
 export default function Cart() {
     const [purchases, setPurchases] =useState([])
-
-
-    // useEffect(handleDummy)
-
-    // function handleDummy() {
-    //     setPurchases(dummy_data)
-    // }
-    // let dummy_data = [
-    //     {
-    //     "product_name":"spiky_mug",
-    //     "quantity": 1,
-    //     "product_id": 2,
-    //     "user_id": 10
-    // },
-    // {
-    //     "product_name":"spiky_shoe",
-    //     "quantity": 2,
-    //     "product_id": 4,
-    //     "user_id": 9
-    // },
-    // {
-    //     "product_name":"spiky_hoodie",
-    //     "quantity": 2,
-    //     "product_id": 1,
-    //     "user_id": 8
-    // }]
-    
-    useEffect(fetchPurchases, [])
-    
+    useEffect(() => fetchPurchases, [])
     
     function fetchPurchases(){
         fetch('/purchases')

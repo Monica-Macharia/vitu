@@ -21,7 +21,8 @@ function CartItem({ item }) {
     }
     return (
         <div className="item-card">
-            <h1 className="item-title">{item.product_name}</h1>
+            <img style={{height: 50 + "px",width:50 + "px"}} src={item.product.image} className="card-img-top" alt={item.product.name} title={item.product.name}/>
+            <h1 className="item-title">{item.product.name}</h1>
             <h1 className="quantity-count">{addQ}</h1>
             <button className="button-add" onClick={handleAdd}><strong>+</strong></button>
             <button className="button-reduce" onClick={handleReduce}>-</button>

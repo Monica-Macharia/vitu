@@ -1,0 +1,9 @@
+.card {
+    border: 1px solid red;
+    border-radius: 3% ;
+}
+
+.card-body {
+    padding: 5%;
+    font-size: 20px;
+}
