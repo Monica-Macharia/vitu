@@ -37,7 +37,7 @@
   }
 }
 /* body {
-  background-image: url("https://images.pexels.com/photos/1884584/pexels-photo-1884584.jpeg?auto=compress&cs=tinysrgb&w=600");
+  background-image: url("cover.jpg");
   background-size: 100%;
 } */
 nav.elements{
@@ -146,6 +146,7 @@ img.hoodie1{
 }
 img.profile{
   width: 800px;
+  height: 600px;
   float: right;
   margin-top: -350px;
   margin-right: 70px;

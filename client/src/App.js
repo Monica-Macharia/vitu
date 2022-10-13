@@ -8,7 +8,7 @@ import {Route, Routes} from 'react-router-dom';
 import Home from './Home.js';
 import Products from './Products.js';
 import About from './About.js';
-import Footer from './Footer.js';
+// import Footer from './Footer.js';
 import Login from './Login.js';
 import Signup from './Signup.js';
   import Cart from './Cart.js';
@@ -27,7 +27,7 @@ function App() {
         <Route path="/Signup" element={<Signup />}/> 
         <Route path="/Cart" element={<Cart />}/>
       </Routes>
-    {<Footer/>}
+    {/* {<Footer/>} */}
        </div>
   );
 }
