@@ -37,7 +37,7 @@
   }
 }
 /* body {
-  background-image: url("https://images.pexels.com/photos/1884584/pexels-photo-1884584.jpeg?auto=compress&cs=tinysrgb&w=600");
+  background-image: url("cover.jpg");
   background-size: 100%;
 } */
 nav.elements{
@@ -45,6 +45,9 @@ nav.elements{
   margin-top: -43px;
   margin-right: 90px;
   
+}
+button{
+  color: crimson;
 }
 h1.title{
   margin-left: 90px;
@@ -84,4 +87,70 @@ div.intro{
   margin-top: 250px;
   font-size: 20px;
   
+}
+p.us{
+  text-align: center;
+  margin-left: 300px;
+  margin-right: 300px;
+  margin-top: 50px;
+  font-size: 20px;
+}
+div.image1{
+  padding: 50px;
+  border-radius:10%;
+  height: 100px;
+  margin-top: -150px; 
+  width: 150px;
+  /* margin-left: 500px;
+  margin-top: -5px; */
+  text-align: center;
+  font-size: 14px;
+  margin-top: 10px;
+  margin-left: 150px;
+}
+div.image2{
+  padding: 50px;
+  border-radius:10%;
+  height: 100px;
+   
+  width: 150px;
+  /* margin-left: 500px;
+  margin-top: -5px; */
+  text-align: center;
+  font-size: 14px;
+  margin-top: -150px;
+  margin-left: 480px;
+  
+}
+div.image3{
+  padding: 50px;
+  border-radius:10%;
+  height: 100px;
+  
+  width: 150px;
+  margin-right: 390px;
+  
+  text-align: justify;
+  font-size: 14px;
+  float: right;
+  margin-top: -150px; 
+}
+img.shirt1{
+  height: 200px;
+}
+img.mug1{
+  height: 200px;
+}
+img.hoodie1{
+  height: 200px;
+}
+img.profile{
+  width: 800px;
+  height: 600px;
+  float: right;
+  margin-top: -350px;
+  margin-right: 70px;
+}
+div.phrase{
+  margin-top: -50px;
 }
