@@ -1,0 +1,84 @@
+.purchasesholder {
+    position: absolute;
+    width: 1000px;
+    height: 512px;
+    left: 93px;
+    top: 394px;
+    stroke: rgb(109, 106, 106);
+    border: 1px solid rgb(174, 168, 168);
+    border-radius: 1%;
+    font-family: bs-font-sans-serif;
+}
+
+.purchasessummary {
+    position: absolute;
+    width: 570px;
+    height: 370px;
+    left: 1124px;
+    top: 394px;
+    border: 1px solid rgb(174, 168, 168);
+    border-radius: 1%;
+    font-family: bs-font-sans-serif;
+}
+
+.checkout-button {
+position: absolute;
+width: 304px;
+height: 40px;
+left: 130px;
+top: 324px;
+background: #E92F31;
+border-radius: 20px;
+border: 1px solid rgb(248, 244, 244);
+color: aliceblue;
+font-family: bs-font-sans-serif;
+font-size: 20px;
+}
+
+button:hover {
+    background-color: rgb(66, 4, 4);
+}
+
+#summary-header {
+    font-family: bs-font-sans-serif;
+    font-size: 28px;
+    text-align: center;
+    padding: 2%;
+}
+
+.header-separator {
+    position: absolute;
+    width: 1700px;
+    height: 0px;
+    left: 60px;
+    top: 222px;
+    border: 1px solid rgba(177, 172, 172, 1)
+}
+
+.cart-title {
+    position: absolute;
+    left: 820px;
+    top: 130px;
+    font-family: bs-font-sans-serif;
+    font-size: 45px;
+}
+
+.grey-topbar {
+    position: absolute;
+    width: 100%;
+    height: 70px;
+    left: 0px;
+    top: 0px;
+    background: rgb(227, 226, 226);
+    border-radius: 1% 1% 0px 0px;
+}
+
+.grey-topbar-summary {
+    position: absolute;
+    width: 100%;
+    height: 70px;
+    left: 0px;
+    top: 0px;
+    background: rgb(227, 226, 226);
+    border-radius: 1px 1px 0px 0px;
+}
