@@ -1,10 +1,10 @@
 import React from 'react'
-import { Footer, Navbar } from "../components";
+// import { Footer, Navbar } from "../components";
 import { Link } from 'react-router-dom';
 const Signup = () => {
     return (
         <>
-            <Navbar />
+            {/* <Navbar /> */}
             <div className="container my-3 py-3">
                 <h1 className="text-center">Signup</h1>
                 <hr />
@@ -50,7 +50,7 @@ const Signup = () => {
                     </div>
                 </div>
             </div>
-            <Footer />
+            {/* <Footer /> */}
         </>
     )
 }
