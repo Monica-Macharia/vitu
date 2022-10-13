@@ -36,10 +36,10 @@
     transform: rotate(360deg);
   }
 }
-body {
+/* body {
   background-image: url("https://images.pexels.com/photos/1884584/pexels-photo-1884584.jpeg?auto=compress&cs=tinysrgb&w=600");
   background-size: 100%;
-}
+} */
 nav.elements{
   float: right;
   margin-top: -43px;

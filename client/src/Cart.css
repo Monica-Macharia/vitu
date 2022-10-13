@@ -1,7 +1,7 @@
 .purchasesholder {
     position: absolute;
     width: 1000px;
-    height: 512px;
+    height: 70%;
     left: 93px;
     top: 394px;
     stroke: rgb(109, 106, 106);
@@ -81,4 +81,10 @@ button:hover {
     top: 0px;
     background: rgb(227, 226, 226);
     border-radius: 1px 1px 0px 0px;
+}
+
+.items-loop {
+    position: absolute;
+    top: 50px;
+    padding: 30px;
 }

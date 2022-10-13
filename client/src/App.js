@@ -11,7 +11,7 @@ import Home from './Home.js';
 // import Contact from './Contact.js';
 // import Login from './Login.js';
 // import Signup from './Signup.js';
-// import Cart from './Cart.js';
+  import Cart from './Cart.js';
 
 function App() {
   return (
@@ -20,11 +20,11 @@ function App() {
 
       <Routes>
         <Route path="/" element={<Home />}/>
-        <Route path="/Products" element={<Products />}/>
+        {/* <Route path="/Products" element={<Products />}/>
         <Route path="/About" element={<About />}/>
         <Route path="/Contact" element={<Contact />}/>
         <Route path="/Login" element={<Login />}/>
-        <Route path="/Signup" element={<Signup />}/>
+        <Route path="/Signup" element={<Signup />}/> */}
         <Route path="/Cart" element={<Cart />}/>
       </Routes>
 

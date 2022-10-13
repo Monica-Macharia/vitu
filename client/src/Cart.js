@@ -1,11 +1,17 @@
 import {useEffect, useState} from 'react'
 import './Cart.css';
+import CartItem from './CartItems';
 
 
 export default function Cart() {
     const [purchases, setPurchases] =useState([])
-    const [quantityCount, setQuantityCount] = useState(1)
 
+
+    useEffect(handleDummy, [])
+
+    function handleDummy() {
+        setPurchases(dummy_data)
+    }
     let dummy_data = [
         {
         "product_name":"spiky_mug",
@@ -26,39 +32,30 @@ export default function Cart() {
         "user_id": 8
     }]
     
-    useEffect(fetchPurchases, [])
+    // useEffect(fetchPurchases, [])
     
     
-    function fetchPurchases(){
-        fetch('http://localhost:3000/purchases')
-        .then(r => r.json())
-        .then(data => setPurchases(data))
-    }
+    // function fetchPurchases(){
+    //     fetch('http://localhost:3000/purchases')
+    //     .then(r => r.json())
+    //     .then(data => setPurchases(data))
+    // }
 
     
 
     return (
         <div>
-            <h1>Vitu vizuri-Header</h1>
             <h1 className='cart-title'><strong>Cart</strong></h1>
             <div className='header-separator'></div>
             <div className='purchasesholder'>
                 <div className='grey-topbar'><strong id='summary-header'>Item list</strong></div>
-                {dummy_data.map(dummy => {
-                    function handleAdd() {
-                      dummy.quantity = 4
-                    }
+                <div className='items-loop'>
+                {purchases.map(item => {
                     return (
-                        <div>
-                        <h1>{dummy.product_name}</h1>
-                        <h1>{dummy.quantity}</h1>
-                        <button onClick={handleAdd()}>+</button>
-                        <button>-</button>
-                        <button>x</button>
-                        </div>
+                        <CartItem item = {item}/>
                     )
                 })}
-                
+                </div>   
             </div>
             <div className='purchasessummary'>
             <div className='grey-topbar-summary'><strong id='summary-header'>Order Summary</strong></div>

@@ -1,0 +1,54 @@
+.button-reduce {
+    position: relative;
+    left: 500px;
+    color: black;
+    background-color: white;
+    border-color: #E92F31;
+    height: 20px;
+    width: 50px;
+    border-radius: 5%;
+    
+}
+
+.button-add {
+    position: relative;
+    left: 620px;
+    color: black;
+    background-color: white;
+    border-color: #E92F31;
+    height: 20px;
+    width: 50px;
+    border-radius: 5%;
+}
+
+.button-delete {
+    position: relative;
+    left: 650px;
+    color: white;
+    background-color: #E92F31;
+    border-color: #E92F31;
+    height: 20px;
+    width: 50px;
+    border-radius: 5%;
+   
+}
+
+.item-line {
+    position: relative;
+    width: 800px;
+    height: 0px;
+    /* left: 60px;*/
+    /* top: 2%;  */
+    border: 1px solid rgba(177, 172, 172, 1);  
+}
+
+.item-card {
+    border-bottom: 1px solid black ;
+    width: 500px;
+    
+}
+
+.quantity-count {
+    position: relative;
+    left: 595px;
+}
