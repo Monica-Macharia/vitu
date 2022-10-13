@@ -17,12 +17,12 @@ function App() {
 
       <Routes>
         <Route path="/" element={<Home />}/>
-        {/* <Route path="/Products" element={<Products />}/>
+        <Route path="/Products" element={<Products />}/>
         <Route path="/About" element={<About />}/>
         <Route path="/Contact" element={<Contact />}/>
         <Route path="/Login" element={<Login />}/>
         <Route path="/Signup" element={<Signup />}/>
-        <Route path="/Cart" element={<Cart />}/> */}
+        <Route path="/Cart" element={<Cart />}/>
       </Routes>
 
      
