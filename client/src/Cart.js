@@ -15,7 +15,7 @@ export default function Cart() {
     let dummy_data = [
         {
         "product_name":"spiky_mug",
-        "quantity": 3,
+        "quantity": 1,
         "product_id": 2,
         "user_id": 10
     },

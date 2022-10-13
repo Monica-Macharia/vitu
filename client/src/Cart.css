@@ -1,9 +1,9 @@
 .purchasesholder {
     position: absolute;
-    width: 1000px;
+    width: 50%;
     height: 70%;
-    left: 93px;
-    top: 394px;
+    left: 60px;
+    top: 270px;
     stroke: rgb(109, 106, 106);
     border: 1px solid rgb(174, 168, 168);
     border-radius: 1%;
@@ -12,10 +12,10 @@
 
 .purchasessummary {
     position: absolute;
-    width: 570px;
+    width: 35%;
     height: 370px;
-    left: 1124px;
-    top: 394px;
+    left: 58%;
+    top: 270px;
     border: 1px solid rgb(174, 168, 168);
     border-radius: 1%;
     font-family: bs-font-sans-serif;
@@ -23,16 +23,16 @@
 
 .checkout-button {
 position: absolute;
-width: 304px;
-height: 40px;
-left: 130px;
+width: 200px;
+height: 25px;
+left: 140px;
 top: 324px;
 background: #E92F31;
 border-radius: 20px;
 border: 1px solid rgb(248, 244, 244);
 color: aliceblue;
 font-family: bs-font-sans-serif;
-font-size: 20px;
+font-size: 15px;
 }
 
 button:hover {
@@ -41,14 +41,14 @@ button:hover {
 
 #summary-header {
     font-family: bs-font-sans-serif;
-    font-size: 28px;
+    font-size: 20px;
     text-align: center;
     padding: 2%;
 }
 
 .header-separator {
     position: absolute;
-    width: 1700px;
+    width: 88%;
     height: 0px;
     left: 60px;
     top: 222px;
@@ -57,10 +57,10 @@ button:hover {
 
 .cart-title {
     position: absolute;
-    left: 820px;
+    left: 50%;
     top: 130px;
     font-family: bs-font-sans-serif;
-    font-size: 45px;
+    font-size: 38px;
 }
 
 .grey-topbar {
