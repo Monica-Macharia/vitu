@@ -31,7 +31,7 @@ const Login = () => {
                 />
               </div>
               <div className="my-3">
-                <p>New Here? <Link to="/register" className="text-decoration-underline text-info">Register</Link> </p>
+                <p>New Here? <Link to="/register" className="text-decoration-underline text-info">Signup</Link> </p>
               </div>
               <div className="text-center">
                 <button class="my-2 mx-auto btn btn-dark" type="submit" disabled>
