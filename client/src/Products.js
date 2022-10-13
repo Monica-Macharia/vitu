@@ -1,4 +1,6 @@
 import React, {useState, useEffect} from 'react';
+import ProductCard from './ProductCard';
+import "./Products.css"
 
 
 
@@ -16,17 +18,14 @@ const Products = () => {
     return (
         <div>
         <h3>Our Products</h3>
-        <div className='product-container'>
+        <div>
+        <div className='container'>
+        <div className='row'>
             {products.map(product =>(
-                <div key={product.id} className='product-item'>
-                    image: {product.image}
-                    name: {product.name}
-                    category: {product.category}
-                    description: {product.description}
-                    price: {product.price}
-                    review: {product.review}
-                </div>
+                <ProductCard product = {product}/>
             ))}
+        </div>
+        </div>
         </div>
         </div>
         );
