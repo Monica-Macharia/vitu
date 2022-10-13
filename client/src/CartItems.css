@@ -1,6 +1,6 @@
 .button-reduce {
     position: relative;
-    left: 500px;
+    left: 300px;
     color: black;
     background-color: white;
     border-color: #E92F31;
@@ -12,7 +12,7 @@
 
 .button-add {
     position: relative;
-    left: 620px;
+    left: 410px;
     color: black;
     background-color: white;
     border-color: #E92F31;
@@ -21,21 +21,33 @@
     border-radius: 5%;
 }
 
-.button-delete {
+.button-confirm-green {
     position: relative;
-    left: 650px;
+    left: 450px;
     color: white;
-    background-color: #E92F31;
+    background-color:green;
+    border-color: green;
+    height: 20px;
+    width: 75px;
+    border-radius: 5%;
+   
+}
+
+.button-confirm-red {
+    position: relative;
+    left: 450px;
+    color: white;
+    background-color:#E92F31;
     border-color: #E92F31;
     height: 20px;
-    width: 50px;
+    width: 62px;
     border-radius: 5%;
    
 }
 
 .item-line {
-    position: relative;
-    width: 800px;
+    position: absolute;
+    width: 200px;
     height: 0px;
     /* left: 60px;*/
     /* top: 2%;  */
@@ -44,11 +56,18 @@
 
 .item-card {
     border-bottom: 1px solid black ;
-    width: 500px;
+    width: 350px;
     
 }
 
 .quantity-count {
     position: relative;
-    left: 595px;
+    left: 405px;
+    font-size: 20px;
+    font-family: bs-font-sans-serif;
+}
+
+.item-title {
+    font-size: 20px;
+    font-family: bs-font-sans-serif;
 }
