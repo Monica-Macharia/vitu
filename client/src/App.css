@@ -1,0 +1,87 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+body {
+  background-image: url("https://images.pexels.com/photos/1884584/pexels-photo-1884584.jpeg?auto=compress&cs=tinysrgb&w=600");
+  background-size: 100%;
+}
+nav.elements{
+  float: right;
+  margin-top: -43px;
+  margin-right: 90px;
+  
+}
+h1.title{
+  margin-left: 90px;
+}
+a.active{
+  /* padding: 650px; */
+  margin-right: 100px;
+}
+a.products{
+  margin-right: 100px;
+}
+a.about{
+  margin-right: 100px;
+}
+a.contact{
+  margin-right: 100px;
+}
+a.login{
+  margin-right: 20px;
+}
+a.signup{
+  margin-right: 20px;
+  
+ 
+}
+button.color{
+  background-color: #e92f31;
+  color: white;
+}
+button.explore{
+  background-color: #e92f31;
+  height: 40px;
+  color: white;
+}
+div.intro{
+  margin-left: 150px;
+  margin-top: 250px;
+  font-size: 20px;
+  
+}
