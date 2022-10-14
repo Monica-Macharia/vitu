@@ -1,4 +1,4 @@
-class UserController < ApplicationController
+class UsersController < ApplicationController
     rescue_from ActiveRecord::RecordNotFound, with: :not_found
     rescue_from ActiveRecord::RecordInvalid, with: :render_invalid_record
     # def create

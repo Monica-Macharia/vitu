@@ -5,7 +5,7 @@ import CartItem from './CartItems';
 
 export default function Cart() {
     const [purchases, setPurchases] =useState([])
-    useEffect(() => fetchPurchases, [])
+    useEffect(fetchPurchases, [])
     
     function fetchPurchases(){
         fetch('/purchases')

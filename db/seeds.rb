@@ -95,17 +95,17 @@ Purchase.create([
         "quantity":1 ,
         "product_id": 2,
         "user_id":1
-    },
-    {
-        "quantity": 1,
-        "product_id": 3,
-        "user_id": 3
-    },
-    {
-        "quantity": 1 ,
-        "product_id": 4,
-        "user_id": 3
-    },
+     },
+    # {
+    #     "quantity": 1,
+    #     "product_id": 3,
+    #     "user_id": 3
+    # },
+    # {
+    #     "quantity": 1 ,
+    #     "product_id": 4,
+    #     "user_id": 3
+    # },
 ])
 
 puts "Mali safi designs loaded!"
