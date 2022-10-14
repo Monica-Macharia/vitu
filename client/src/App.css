@@ -1,3 +1,4 @@
+
 .App {
   text-align: center;
 }
@@ -67,8 +68,7 @@ a.login{
 }
 a.signup{
   margin-right: 20px;
-  
- 
+
 }
 button.color{
   background-color: #e92f31;
@@ -84,4 +84,8 @@ div.intro{
   margin-top: 250px;
   font-size: 20px;
   
+}
+
+div.container my-3 py-3 {
+  padding-left: 1rem;
 }
