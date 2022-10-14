@@ -1,8 +1,8 @@
 # Vituvizuri
 
 <div align="center">
-    <a href="">
-        <!-- <img src="https://drive.google.com/file/d/1BGg67LXzwpdSsh1XkjaySfHGARdfyxMj/view?usp=sharing"> -->
+   <a href="https://github.com/davidnene/vitu-vizuri">
+    <img src="https://i.ibb.co/K2Ks1WH/acdaaf3def5f4517b48390e0fcf2fb5d.png" />
     </a>
 </div>
 
@@ -19,7 +19,7 @@
 [![forthebadge](https://forthebadge.com/images/badges/made-with-javascript.svg)]()
 <br />
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/5b677e607def4466b8084eb76be4f0d7)]()
-![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat) [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)]()
+![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat) [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)]() [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 </div>
 
 
@@ -28,7 +28,7 @@
 
 > The source code is open so that you can download the source code and set it up with ease if you would like to have your own exclusive environment.
 
-![Web Site System](https://media.giphy.com/media/Qw4X3FPv7GxR0r3Lzvq/giphy.gif)
+![Web Site System](https://media.giphy.com/media/Qw4X3FPv7GxR0r3Lzvq/giphy.gif) ![Wears](https://media.giphy.com/media/cC9lYQyt5vJIbwhsJa/giphy.gif)
 
 ## App Screenshots
 
