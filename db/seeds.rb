@@ -66,22 +66,22 @@ User.create([
         "name": "John Doe",
         "gender": "M",
         "email": "doe@etest.com",
-        "password": "doe@123",
-        "password_confirmation": "doe@123"
+        "password": "doe@123"
+     
     },
     {
         "name": "Jane Doe",
         "gender": "F",
         "email": "jane@etest.com",
-        "password": "jane@123",
-        "password_confirmation": "jane@123"
+        "password": "jane@123"
+      
     },
     {
         "name": "Yu Wang",
         "gender": "M",
         "email": "wang@etest.com",
-        "password": "wang@123",
-        "password_confirmation": "wang@123"
+        "password": "wang@123"
+       
     }
 ])
 
@@ -95,7 +95,7 @@ Purchase.create([
         "quantity":1 ,
         "product_id": 2,
         "user_id":1
-     },
+     }
     # {
     #     "quantity": 1,
     #     "product_id": 3,
