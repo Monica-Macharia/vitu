@@ -1,22 +1,31 @@
+import React from 'react';
+import { useNavigate } from 'react-router-dom'
 import {useEffect, useState} from 'react'
 import './Cart.css';
 import CartItem from './CartItems';
 
+function Dashboard(){
 
-export default function Cart() {
+
     const [purchases, setPurchases] =useState([])
     useEffect(fetchPurchases, [])
+    
     
     function fetchPurchases(){
         fetch('/purchases')
         .then(r => r.json())
         .then(data => setPurchases(data))
     }
-
+    const navigate = useNavigate();
+    const handlelogout = () => {
+    navigate('/login')
+    }
     
 
     return (
         <div>
+            
+            Welcome!
             <h1 className='cart-title'><strong>Cart</strong></h1>
             <div className='header-separator'></div>
             <div className='purchasesholder'>
@@ -34,6 +43,12 @@ export default function Cart() {
                 <strong id='summary-header'>Order Summary</strong>
                 <button className='checkout-button'><strong>Checkout</strong></button>
             </div>
+            <input
+        type="button"
+        value="Logout"
+        onClick={handlelogout}/>
         </div>
     )
 }
+
+export default Dashboard;

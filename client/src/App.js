@@ -11,7 +11,8 @@ import About from './About.js';
 // import Footer from './Footer.js';
 import Login from './Login.js';
 import Signup from './Signup.js';
-  import Cart from './Cart.js';
+ 
+import Dashboard from './Dashboard';
 
 function App() {
   return (
@@ -25,7 +26,8 @@ function App() {
          <Route path="/About" element={<About />}/>
         <Route path="/Login" element={<Login />}/>
         <Route path="/Signup" element={<Signup />}/> 
-        <Route path="/Cart" element={<Cart />}/>
+
+        <Route path="Login/Dashboard" element={<Dashboard />}/>
       </Routes>
     {/* {<Footer/>} */}
        </div>
