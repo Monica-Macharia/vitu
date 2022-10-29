@@ -1,6 +1,6 @@
 
 
-
+// import commonfile from './commonfile';
 import './App.css';
 import React from 'react';
 import NavBar from './NavBar.js';

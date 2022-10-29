@@ -1,59 +1,103 @@
 import React, {useState} from 'react';
 import { useNavigate } from 'react-router-dom'
+// import axios from "axios";
+// import { setUserSession } from './commonfile';
 
-function Login(props){
+function Login(){
  
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-    // const [error, setError] = useState(null)
-   const navigate = useNavigate(); 
+  // const [email, setEmail] = useState("");
+  // const [password, setPassword] = useState("");
+  const [values, setValues] = useState({
+    email: "",
+    password: ""
+  });
+  const [error, setError] = useState("")
+  const navigate = useNavigate();
+
+
+  const handleChange = (e) => {
+    setValues({ ...values, [e.target.name]: e.target.value })
+  }
+
+ 
+
+//   const setUserSession = (token, user) => {
+//     sessionStorage.setItem("token", token);
+//     // sessionStorage.setItem("user", JSON.stringify(user));
+
+// }
+   
 
     
  
-    const handleLogin = () =>{
-        navigate('./Dashboard');
-    }
-//     function onLogin(e) {
-//       e.preventDefault();
-//       fetch("/login", {
-//           method: "POST",
-//           headers: {
-//               "Content-Type": "application/json",
+    // const handleLogin = () =>{
 
-//           },
-//           body: JSON.stringify({
-//               email,
-//               password,
-//           }),
-//       })
-//       .then((r) => r.json())
-//       .then(onLogin);
-//   }
+    //   axios.post("http://localhost:3000/login",{
+    //     email: email,
+    //     password: password
+
+    //   }).then(response => {
+    //     setUserSession(response.data.token, response.data.user)
+    //   navigate('./Dashboard');
+    // }).catch(error => {
+    //   if(error.response.status === 401 || error.response.status === 400){
+    //     setError(error.response.data.message); 
+    //   }
+    //   else{
+    //     setError("Try again later")
+    //   }
+     
+    // });
+        
+    
+    function onLogin(e) {
+      e.preventDefault();
+      fetch("/login", {
+          method: "POST",
+          credentials: 'include',
+          headers: {
+              "Content-Type": "application/json",
+
+          },
+          body: JSON.stringify({
+              values
+          }),
+      })
+      .then((r) => {
+        if (r.ok){
+          navigate('./Dashboard');
+        }else{
+          r.json().then((error) => setError(
+            error.message
+          ));
+        }
+      })
+  
+      
+  }
   return (
-    //   <form onSubmit={handleSubmit}>
+      <form onSubmit={onLogin}>
          
-         <form>
+        
+            <p className='error'>{ error}</p>
           <label htmlFor="email">Email</label>
          <input
               type="text"
               id="email"
-              value={email}
-              onChange={(e) => setEmail(
-                  e.target.value
-              )}
+              // placeholder="email"
+              onChange={handleChange} 
               required/>
               <label htmlFor="password">Password</label>
          <input
               type="text"
               id="password"
-              value={password}
-              onChange={(e) => setPassword(
-                  e.target.value
-              )}
-              required/>
+              name="password"
+              onChange={handleChange}         
+              required
+              />
               {/* {error && <div className="error">{error}</div>} */}
         
-              <button type="submit" onClick={handleLogin}> {" "}
+              <button type="submit" > {" "}
         Log In{" "}</button>
               </form>
           
