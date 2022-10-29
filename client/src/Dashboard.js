@@ -1,5 +1,5 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom'
+// import { useNavigate } from 'react-router-dom'
 import {useEffect, useState} from 'react'
 import './Cart.css';
 import CartItem from './CartItems';
@@ -16,16 +16,16 @@ function Dashboard(){
         .then(r => r.json())
         .then(data => setPurchases(data))
     }
-    const navigate = useNavigate();
-    const handlelogout = () => {
-    navigate('/login')
-    }
+    // const navigate = useNavigate();
+    // const handlelogout = () => {
+    // navigate('/login')
+    // }
     
 
     return (
         <div>
             
-            Welcome!
+         
             <h1 className='cart-title'><strong>Cart</strong></h1>
             <div className='header-separator'></div>
             <div className='purchasesholder'>
@@ -43,10 +43,10 @@ function Dashboard(){
                 <strong id='summary-header'>Order Summary</strong>
                 <button className='checkout-button'><strong>Checkout</strong></button>
             </div>
-            <input
+            {/* <input
         type="button"
         value="Logout"
-        onClick={handlelogout}/>
+        onClick={handlelogout}/> */}
         </div>
     )
 }

@@ -122,8 +122,8 @@ function Login(){
               />
               {/* {error && <div className="error">{error}</div>} */}
         
-              <button className= "log" type="submit" > {" "}
-        Log In{" "}</button>
+              <button type="submit" > {" "}
+        Sign In{" "}</button>
               </form>
           
           

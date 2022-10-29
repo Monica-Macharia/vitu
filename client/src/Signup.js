@@ -1,72 +1,78 @@
-// import React, {useState} from 'react';
+import React, {useState} from 'react';
+import { useNavigate } from 'react-router-dom'
 
 
 function Signup(){
-//     const [name, setName] = useState("");
-//     const [gender, setGender] = useState("");
-//     const [email, setEmail] = useState("");
-//     const [password, setPassword] = useState("");
+    // const [name, setName] = useState("");
+    // const [gender, setGender] = useState("");
+    // const [email, setEmail] = useState("");
+    const navigate = useNavigate();
+    const [inputs, setInputs] = useState({
+       
+        name: "",
+        gender: "",
+        email: "",
+        password: ""
+      });
+      const handleChange = (e) => {
+        setInputs({ ...inputs, [e.target.name]: e.target.value })
+      }
+   
 
-//     function handleSubmit(e) {
-//         e.preventDefault();
-//         fetch("/signup", {
-//             method: "POST",
-//             headers: {
-//                 "Content-Type": "application/json",
+    function handleSubmit(e) {
+        e.preventDefault();
+        fetch("http://localhost:3000/signup", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
 
-//             },
-//             body: JSON.stringify({
-//                 name,
-//                 gender,
-//                 email,
-//                 password,
-//             }),
-//         })
-//         .then((r) => r.json())
-//         .then(onLogin);
-//     }
-//     return (
-//         <form onSubmit={handleSubmit}>
-//            <label htmlFor="name">Name</label>
-//            <input
-//                 type="text"
-//                 id="name"
-//                 value={name}
-//                 onChange={(e) => setName(
-//                     e.target.value
-//                 )}/>
-//             <label htmlFor="gender">Gender</label>
-//            <input
-//                 type="text"
-//                 id="gender"
-//                 value={gender}
-//                 onChange={(e) => setGender(
-//                     e.target.value
-//                 )}/>
-//             <label htmlFor="email">Email</label>
-//            <input
-//                 type="text"
-//                 id="email"
-//                 value={email}
-//                 onChange={(e) => setEmail(
-//                     e.target.value
-//                 )}/>
-//                 <label htmlFor="password">Password</label>
-//            <input
-//                 type="text"
-//                 id="password"
-//                 value={password}
-//                 onChange={(e) => setPassword(
-//                     e.target.value
-//                 )}/>
+            },
+            body: JSON.stringify({
+               inputs
+            }),
+        })
+        .then((r) => r.json())
+        .then(setInputs);
+        navigate('./Signin')
+    }
+    return (
+        <form onSubmit={handleSubmit}>
+           <label htmlFor="name">Name</label>
+           <input
+                type="text"
+                id="name"
+                name="name"
+                onChange={handleChange}
+                required/>
+            <label htmlFor="gender">Gender</label>
+           <input
+                type="text"
+                id="gender"
+                name="gender"
+                onChange={handleChange}
+                required/>
+            <label htmlFor="email">Email</label>
+           <input
+                type="text"
+                id="email"
+                name="email"
+                onChange={handleChange}
+                required/>
+                <label htmlFor="password">Password</label>
+           <input
+                type="text"
+                id="password"
+                name="password"
+                onChange={handleChange}
+                required/>
 
-//                 <button type="submit">Submit</button>
-//                 </form>
+                <button className="log" type="submit">Submit</button>
+                </form>
             
             
             
             
-//     );
+    );
 }
 
 export default Signup

@@ -11,6 +11,8 @@ import About from './About.js';
 // import Footer from './Footer.js';
 import Login from './Login.js';
 import Signup from './Signup.js';
+import Signin from './Signin.js';
+
  
 import Dashboard from './Dashboard';
 
@@ -28,6 +30,8 @@ function App() {
         <Route path="/Signup" element={<Signup />}/> 
 
         <Route path="Login/Dashboard" element={<Dashboard />}/>
+        <Route path="Signup/Signin" element={<Signin />}/>
+        
       </Routes>
     {/* {<Footer/>} */}
        </div>
