@@ -17,7 +17,6 @@ const Products = () => {
 
     return (
         <div>
-        <h3>Our Products</h3>
         <div>
         <div className='container'>
         <div className='row'>

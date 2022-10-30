@@ -65,7 +65,7 @@ class UsersController < ApplicationController
 
     #only allow a list of trusted params through
     def user_params
-        params.permit(:name, :email, :gender, :password, :password_confirmation)
+        params.permit(:name, :email, :gender, :password)
     end
 
     def record_not_found
