@@ -66,7 +66,7 @@ function Login(){
       e.preventDefault();
       fetch("http://localhost:3000/login", {
           method: "POST",
-          credentials: 'include',
+          // credentials: 'include',
           headers: {
               "Content-Type": "application/json",
 
@@ -77,7 +77,8 @@ function Login(){
       })
 
       .then((r) => r.json())
-      .then(setValues);
+      .then((values) => setValues(values));
+      // console.log(setValues)
       navigate('./Dashboard')
 
     //   .then((r) => {

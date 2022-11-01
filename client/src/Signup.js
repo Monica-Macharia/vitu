@@ -1,12 +1,12 @@
 import React, {useState} from 'react';
-import { useNavigate } from 'react-router-dom'
+// import { useNavigate } from 'react-router-dom'
 
 
 function Signup(){
     // const [name, setName] = useState("");
     // const [gender, setGender] = useState("");
     // const [email, setEmail] = useState("");
-    const navigate = useNavigate();
+    // const navigate = useNavigate();
     const [inputs, setInputs] = useState({
        
         name: "",
@@ -17,6 +17,9 @@ function Signup(){
       const handleChange = (e) => {
         setInputs({ ...inputs, [e.target.name]: e.target.value })
       }
+      function myFunction() {
+        alert("User Sucessfully created!")
+    }
    
 
     function handleSubmit(e) {
@@ -32,8 +35,11 @@ function Signup(){
             }),
         })
         .then((r) => r.json())
-        .then(setInputs);
-        navigate('./Signin')
+        .then((inputs) => setInputs(
+            inputs));
+        // console.log(inputs)
+        myFunction();
+        // navigate('./Signin')
     }
     return (
         <form onSubmit={handleSubmit}>
