@@ -3,9 +3,9 @@ import {NavLink} from 'react-router-dom';
 
 function NavBar(){
     return(
-        <div className = "bar">
+        // <div className = "bar">
         
-        <nav className= "elements">
+        <nav className= "elements" >
             <ul>
             <li><NavLink to = "./" exact = "true" >Home</NavLink></li>
             <li><NavLink to ="./Products" exact = "true" className= "products">Products</NavLink></li>
@@ -15,7 +15,7 @@ function NavBar(){
             <li><NavLink to ="./Signup" exact = "true" className= "signup"><button className= "color">Signup</button></NavLink></li>
             </ul>
         </nav>
-        </div>
+        // </div>
 
     )
 }

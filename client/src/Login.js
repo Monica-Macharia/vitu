@@ -101,31 +101,50 @@ function Login(){
       
   
   return (
-      <form onSubmit={onLogin}>
+      // <form onSubmit={onLogin}>
          
         
-            {/* <p className='error'>{ error}</p> */}
-          <label htmlFor="email">Email</label>
-         <input
-              type="text"
-              id="email"
-              // placeholder="email"
-              onChange={handleChange} 
-              required/>
-              <label htmlFor="password">Password</label>
-         <input
-              type="text"
-              id="password"
-              name="password"
-              onChange={handleChange}         
-              required
-              />
-              {/* {error && <div className="error">{error}</div>} */}
+      //       {/* <p className='error'>{ error}</p> */}
+      //     <label htmlFor="email">Email</label>
+      //    <input
+      //         type="text"
+      //         id="email"
+      //         // placeholder="email"
+      //         onChange={handleChange} 
+      //         required/>
+      //         <label htmlFor="password">Password</label>
+      //    <input
+      //         type="text"
+      //         id="password"
+      //         name="password"
+      //         onChange={handleChange}         
+      //         required
+      //         />
+      //         {/* {error && <div className="error">{error}</div>} */}
         
-              <button className= "log" type="submit" > {" "}
+      //         <button className= "log" type="submit" > {" "}
+      //   Log In{" "}</button>
+
+      //         </form>
+
+
+          <form className="form" onSubmit={onLogin}>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1"  onChange={handleChange} aria-describedby="emailHelp"/>
+           
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <input type="password" class="form-control" onChange={handleChange}  id="exampleInputPassword1"/>
+          </div>
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1"/>
+            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+          </div>
+          <button type="submit" class="btn btn-primary">{" "}
         Log In{" "}</button>
-              </form>
-          
+        </form>
           
           
           
