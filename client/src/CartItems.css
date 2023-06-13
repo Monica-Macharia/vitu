@@ -23,24 +23,24 @@
 
 .button-confirm-green {
     position: relative;
-    left: 450px;
+    left: 350px;
     color: white;
     background-color:green;
     border-color: green;
-    height: 20px;
-    width: 75px;
+   height: 30px;
+    width: 100px;
     border-radius: 5%;
    
 }
 
 .button-confirm-red {
     position: relative;
-    left: 450px;
+    left: 350px;
     color: white;
     background-color:#E92F31;
     border-color: #E92F31;
-    height: 20px;
-    width: 62px;
+    height: 30px;
+    width: 100px;
     border-radius: 5%;
    
 }
@@ -62,7 +62,8 @@
 
 .quantity-count {
     position: relative;
-    left: 405px;
+    left: 400px;
+    top: 0px;
     font-size: 20px;
     font-family: bs-font-sans-serif;
 }

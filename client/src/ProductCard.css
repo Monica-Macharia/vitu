@@ -21,7 +21,10 @@
     border: 1px solid red;
     
 }
-
+div.card mb-3{
+    align-items: center;
+    padding: 20px;
+}
 .card-title {
     font-size: 20px;
 }

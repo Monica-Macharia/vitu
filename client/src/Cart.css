@@ -1,15 +1,17 @@
 .purchasesholder {
     position: absolute;
-    width: 50%;
+    width: 90vw;
     height: 70%;
     left: 60px;
-    top: 270px;
+    top: 175px;
     stroke: rgb(109, 106, 106);
     border: 1px solid rgb(174, 168, 168);
     border-radius: 1%;
     font-family: bs-font-sans-serif;
 }
-
+.card-img-top{
+    width: 10px;
+}
 .purchasessummary {
     position: absolute;
     width: 35%;
@@ -51,14 +53,14 @@ button:hover {
     width: 88%;
     height: 0px;
     left: 60px;
-    top: 222px;
+    top: 150px;
     border: 1px solid rgba(177, 172, 172, 1)
 }
 
 .cart-title {
     position: absolute;
     left: 50%;
-    top: 130px;
+    top: 90px;
     font-family: bs-font-sans-serif;
     font-size: 38px;
 }

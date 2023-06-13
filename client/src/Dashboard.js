@@ -38,11 +38,12 @@ function Dashboard(){
                 })}
                 </div>   
             </div>
-            <div className='purchasessummary'>
+            {/* <div className='purchasessummary'>
             <div className='grey-topbar-summary'><strong id='summary-header'>Order Summary</strong></div>
-                <strong id='summary-header'>Order Summary</strong>
+                ddddddddddd
+                <div>SubTotals:</div>
                 <button className='checkout-button'><strong>Checkout</strong></button>
-            </div>
+            </div> */}
             {/* <input
         type="button"
         value="Logout"

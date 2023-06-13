@@ -3,6 +3,9 @@
     column-count: 3;
     row-gap: 3px;
 }
+.grid text-center{
+    border: solid;
+}
 
 .row {
     grid-row-gap: 3px;

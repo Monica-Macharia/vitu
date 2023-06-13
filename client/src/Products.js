@@ -16,17 +16,15 @@ const Products = () => {
 
 
     return (
-        <div>
-        <div>
+      
         <div className='container'>
         <div className='row'>
             {products.map(product =>(
-                <ProductCard product = {product}/>
+                <ProductCard product = {product} products={product.id}/>
             ))}
         </div>
         </div>
-        </div>
-        </div>
+       
         );
 };
 export default Products;
