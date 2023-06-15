@@ -323,22 +323,22 @@ background: #A9A9AF;
 mix-blend-mode: color-burn;
 }
 button.explore3{
- 
+  position: absolute;
+  z-index: 50;
   background: white(203, 184, 152, 0.35);
   border: 1px solid rgba(0, 0, 0, 0.5);
-  position: absolute;
-  top: 660px;
+  bottom: 30px;
   left: 630px;
   width: 190px;
   height: 50px;
   color: black;
   font-family: 'Kaisei Opti';
-font-style: normal;
-font-weight: 700;
-font-size: 16px;
-line-height: 52px;
-border-radius: 5px;
-text-align: center;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 52px;
+  border-radius: 5px;
+  text-align: center;
 
 
 

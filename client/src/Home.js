@@ -1,8 +1,25 @@
-import React from 'react';
+import React, {useState} from 'react';
+import { useNavigate } from 'react-router-dom'
 
 
 function Home(){
+    const [buttonColor, setButtonColor] = useState("black");
+    const navigate = useNavigate();
 
+    function handleClick(){
+        setButtonColor('white');
+        navigate('./Products')
+       
+    }
+    function handleColor(){
+      
+        setButtonColor('white');
+           
+       
+    }
+    function handleColorOut(){
+        setButtonColor('black');
+    }
     return(
         <div className= "phrase">
             
@@ -23,7 +40,7 @@ function Home(){
             <div className='slant3'>
              </div>
              
-             <button className= "explore3">Discover Now</button>
+             <button className= "explore3" onMouseLeave={handleColorOut} onMouseEnter={handleColor} style={{ color: buttonColor }} onClick={handleClick}>Discover Now</button>
           
             <div className='slant4'></div>
             
