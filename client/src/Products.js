@@ -16,15 +16,23 @@ const Products = () => {
 
 
     return (
+      <div className="products-page"> 
+      <h2>Complete the look</h2>
+      <p>Outfit inspiration</p>
       
-        <div className='container'>
-        <div className='row'>
+      <div className='container'>
             {products.map(product =>(
+               
+               
+             
                 <ProductCard product = {product} products={product.id}/>
+                
+                
             ))}
+           </div>
+        
+        
         </div>
-        </div>
-       
         );
 };
 export default Products;

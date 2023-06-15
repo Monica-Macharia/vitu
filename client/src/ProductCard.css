@@ -4,10 +4,50 @@
     
 
 }
+div.container{
+    margin-top: 90px;
+  display: flex;
+  flex-direction: row;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  border: 5px solid green;
+}
+.row{
+    border-style: none;
+}
+.grid text-center{
+    align-items: center;
+}
 .items{
-    padding: 50px;
+   
+    padding: 5px;
+   
+    align-items: center; 
+    
    
     
+}
+.g-col-12{
+    padding-left: 10%;
+   
+    align-self: center;
+    justify-self:center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: 0.2px solid red;
+    border-radius: 10px ;
+    align-items: center;
+    margin-bottom: 10px; 
+   
+    
+}
+.center{
+    padding-left: 10px;
+}
+.left{
+    
+    padding-left: 5%;
+    padding-top: 0px;
 }
 .col{
     border: 1px solid red;
@@ -20,6 +60,9 @@
     font-size: 20px;
     border: 1px solid red;
     
+}
+.end{
+  align-items: flex-end;
 }
 div.card mb-3{
     align-items: center;
