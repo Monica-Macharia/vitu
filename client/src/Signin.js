@@ -101,31 +101,23 @@ function Login(){
       
   
   return (
-      <form onSubmit={onLogin}>
          
-        
-            {/* <p className='error'>{ error}</p> */}
-          <label htmlFor="email">Email</label>
-         <input
-              type="text"
-              id="email"
-              // placeholder="email"
-              onChange={handleChange} 
-              required/>
-              <label htmlFor="password">Password</label>
-         <input
-              type="text"
-              id="password"
-              name="password"
-              onChange={handleChange}         
-              required
-              />
-              {/* {error && <div className="error">{error}</div>} */}
-        
-              <button type="submit" > {" "}
-        Sign In{" "}</button>
-              </form>
+          <form className="form" onSubmit={onLogin}>
+         
           
+          <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Email</label>
+          <input type="email" class="form-control" id="exampleInputEmail1"  onChange={handleChange} aria-describedby="emailHelp"/>
+          
+          </div>
+          <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Password</label>
+          <input type="password" class="form-control" onChange={handleChange}  id="exampleInputPassword1"/>
+          </div>
+          
+          <button type="submit" class="btn btn-primary">{" "}
+          Sign In{" "}</button>
+          </form>
           
           
           

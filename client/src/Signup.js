@@ -33,7 +33,7 @@ function Signup(){
         })
         .then((r) => r.json())
         .then(setInputs);
-        navigate('./Signin')
+        navigate('../Login')
     }
     return (
         // <form onSubmit={handleSubmit}>
