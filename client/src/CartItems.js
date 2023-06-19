@@ -13,12 +13,36 @@ function CartItem() {
         }, [])
         return (
                     <>
-                    {waitItems.map((cart, index)=>
+                    {/* {waitItems.map((cart, index)=>
                        
                                 
                                 <p class="card-text">{cart.name}</p>
-                                 )}
-                      
+                                 )} */}
+
+                    
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Product</th>
+      <th scope="col">Image</th>
+      <th scope="col">Price</th>
+      <th scope="col">Quanity</th>
+      <th scope="col">Total</th>
+    </tr>
+  </thead>
+  <tbody class="table-group-divider">
+     {waitItems.map((cart, index)=>
+     <tr>
+     <td scope="row">{cart.id}</td>
+     <td><img src={cart.image} alt={cart.name}/></td>
+      <td>{cart.price}</td>
+      <td></td>
+      <td></td>
+    </tr>
+    )}
+   
+  </tbody>
+</table>  
                         
                     </>
             

@@ -1,4 +1,7 @@
-.purchasesholder {
+
+
+
+ .purchasesholder {
     position: absolute;
     width: 90vw;
     height: 70%;
@@ -89,4 +92,4 @@ button:hover {
     position: absolute;
     top: 50px;
     padding: 30px;
-}
+} 

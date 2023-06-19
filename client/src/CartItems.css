@@ -1,4 +1,4 @@
-.button-reduce {
+ .button-reduce {
     position: relative;
     left: 300px;
     color: black;
@@ -49,9 +49,9 @@
     position: absolute;
     width: 200px;
     height: 0px;
-    /* left: 60px;*/
-    /* top: 2%;  */
-    border: 1px solid rgba(177, 172, 172, 1);  
+ left: 60px;
+ top: 2%; 
+     border: 1px solid rgba(177, 172, 172, 1);  
 }
 
 .item-card {
@@ -71,4 +71,4 @@
 .item-title {
     font-size: 20px;
     font-family: bs-font-sans-serif;
-}
+} 
