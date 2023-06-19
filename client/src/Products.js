@@ -28,9 +28,9 @@ const Products = () => {
 
 
     return (
-      <div className="products-page"> 
+      <div className="products-page look"> 
         
-        <p className="look"><i>Complete the look</i></p>
+       
       
       <ProductDisplay selectImage={selectImage}/>
       
@@ -38,7 +38,7 @@ const Products = () => {
       <div class="g-col-12" className="container">
           {products.map((image, index)=>(
               <div className="product-item">
-               <img  class="center" style={{height: 220 + "px",width:220 + "px"}}
+               <img  class="center" 
                 src={image.image} 
                 key={index}
                 className="card-img-top" 

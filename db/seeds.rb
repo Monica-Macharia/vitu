@@ -12,53 +12,101 @@
 puts "Seeding mali safi!"
 Product.create!([
     {
-       "image": "https://cdn.shopify.com/s/files/1/1400/5987/products/black-coffee-mug-with-seahorse-design-deep-etched-integrity-bottles-2540705316980_2000x.png?v=1571303305",
-       "name": "Premium Coffee Mug",
-       "category": "mugs",
-       "description": "pretty mug",
+       "image": "https://images.unsplash.com/photo-1484327973588-c31f829103fe?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=873&q=80",
+       "name": "Mini coat",
+       "category": "coat",
+       "description": "A white mini coat with a brown belt",
        "price": 30
 
     },
     {
-        "image": "https://shopiranart.com/wp-content/uploads/2021/03/Enamel-on-pottery-mug-Garden-Design-1.jpg",
-        "name": "Enamel on pottery mug",
-        "category": "mugs",
-        "description": "enamel mug",
+        "image": "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8Y2xvdGhlc3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60",
+        "name": "Crochet Designs",
+        "category": "shirt",
+        "description": "A v-neck crochet shirt",
         "price":  35
  
      },
      {
-        "image": "https://i.pinimg.com/originals/3c/52/ad/3c52ad3337cef040cbb0abc3442416c2.jpg",
+        "image": "https://images.unsplash.com/photo-1508742345712-0656a285ac27?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80",
         "name": "Dashiki design",
-        "category": "hoodies",
-        "description": "warm designer hoodie",
+        "category": "dress",
+        "description": " A Casual Red Dress",
         "price": 150
  
      },
      {
-        "image": "https://i.pinimg.com/736x/99/c2/f8/99c2f8f2fc4f29cdb09cb587dbb0b1e6--patchwork-designs-cool-hoodies.jpg",
-        "name": "Ankara design hoodie",
-        "category": "hoodies",
-        "description": "ankara desig hoodie warm",
+        "image": "https://images.unsplash.com/photo-1568252542512-9fe8fe9c87bb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=419&q=80",
+        "name": "Ankara design",
+        "category": "Dress",
+        "description": "A Cocktail Dress",
         "price":  205
  
      },
      {
-        "image": "http://bigxmarket.com/wp-content/uploads/2018/11/SWENEARO-2018-Simple-creative-design-line-cross-Print-cotton-T-Shirts-Men-s-New-Arrival-Summer-5.jpg",
-        "name": "Swenearo 2018",
-        "category": "t-shirts",
-        "description": "men's new arrival summer",
+        "image": "https://images.unsplash.com/photo-1581452933479-cd82ee703f92?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDEwfHx8ZW58MHx8fHx8&auto=format&fit=crop&w=500&q=60",
+        "name": "Summer Dress",
+        "category": "dress",
+        "description": "A summer red-flowery dress",
         "price":  200
  
      },
      {
-        "image": "https://ae01.alicdn.com/kf/HTB1WqwzPFXXXXX5XXXXq6xXFXXXY/New-Design-Fashion-Men-s-T-Shirts-2017-Summer-Flower-Patchwork-Short-Sleeve-T-Shirt-Mens.jpg",
-        "name": "Summer Flower Patchwork",
-        "category": "t-shirts",
-        "description": "summer short sleeved t-shirt",
+        "image": "https://images.unsplash.com/photo-1499939667766-4afceb292d05?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1173&q=80",
+        "name": "Slim Dress",
+        "category": "dress",
+        "description": "An atrist creative dress",
         "price":  70
  
-     }
+     },
+     {
+        "image": "https://images.unsplash.com/photo-1484327973588-c31f829103fe?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=873&q=80",
+        "name": "Mini coat",
+        "category": "coat",
+        "description": "A white mini coat with a brown belt",
+        "price": 30
+ 
+     },
+     {
+         "image": "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8Y2xvdGhlc3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60",
+         "name": "Crochet Designs",
+         "category": "shirt",
+         "description": "A v-neck crochet shirt",
+         "price":  35
+  
+      },
+      {
+         "image": "https://images.unsplash.com/photo-1508742345712-0656a285ac27?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80",
+         "name": "Dashiki design",
+         "category": "dress",
+         "description": " A Casual Red Dress",
+         "price": 150
+  
+      },
+      {
+         "image": "https://images.unsplash.com/photo-1568252542512-9fe8fe9c87bb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=419&q=80",
+         "name": "Ankara design",
+         "category": "Dress",
+         "description": "A Cocktail Dress",
+         "price":  205
+  
+      },
+      {
+         "image": "https://images.unsplash.com/photo-1581452933479-cd82ee703f92?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDEwfHx8ZW58MHx8fHx8&auto=format&fit=crop&w=500&q=60",
+         "name": "Summer Dress",
+         "category": "dress",
+         "description": "A summer red-flowery dress",
+         "price":  200
+  
+      },
+      {
+         "image": "https://images.unsplash.com/photo-1499939667766-4afceb292d05?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1173&q=80",
+         "name": "Slim Dress",
+         "category": "dress",
+         "description": "An atrist creative dress",
+         "price":  70
+  
+      }
 ])
 
 User.create([
