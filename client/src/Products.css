@@ -1,9 +1,43 @@
-.container {
-    /* padding: 20px; */
-    column-count: 3
-    
+div.container{
+margin-top: 0px;
+  display: flex;
+  
+  flex-direction: row;
+  overflow-x: scroll;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+  /* border: 1px solid black; */
+  padding: 25px;
+}
+.product-item{
+    display: inline-block;
    
-   
+  margin-right: 10px;
+  padding: 25px;
+  background: radial-gradient(178.94% 106.41% at 26.42% 106.41%, #FFF7B1 0%, rgba(255, 255, 255, 0) 71.88%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, #FFFFFF;
+  border: 1px solid;
+  border-radius: 23px;
+  transition: all 0.8s cubic-bezier(0.15, 0.83, 0.66, 1);
+  cursor: pointer;
+}
+.look{
+    margin-bottom: 0;
+    margin-top: 70px;
+    padding-left: 96px;
+    font-size: 25px;
+}
+.product-display{
+    height: 400px;
+    width: 70vw;
+    margin-left: 390px;
+    margin-bottom: 0;
+}
+.product-item:hover {
+    transform: scale(1.05);
+  }
+.center{
+    height: 220px;
+  width: 220px;
 }
 .grid text-center{
     border: solid;

@@ -1,41 +1,42 @@
+import React, {useEffect, useState} from "react";
 import "./ProductCard.css"
+import ProductDisplay from "./ProductDisplay";
+
 function ProductCard({ product, products }) {
 
-    const addToCart = ({products}) => {
-        fetch('/purchases', {
-        method: 'POST',
-        body: JSON.stringify({ products}),
-        headers: {
-          'Content-Type': 'application/json'
-        }
-      })
-        .then(response => response.json())
-        .then(data => {
-            console.log(data)
-            return data;
-            
-         
-        })
-        .catch(error => {
-          // Handle any errors that occurred during the API request
-          console.error('Error adding item to cart:', error);
-        });
-    };
+    const [display, setDisplay] = useState([])
 
+    
+
+
+    // function handleFetcher(id) {
+    //     fetch(`/products/${id}`)
+    //       .then((res) => res.json())
+    //       .then((data) => setDisplay(data));
+    //   }
+
+//    const handleClick = () => {
+//         handleFetcher(product.id); // Pass the product ID as a parameter to handleFetcher
+//       }
     return (
         
-         
+         <>
+          {/* {display.map(displays =>(
+               
+               
+             
+               <ProductDisplay display = {displays}/>
+               
+               
+           ))} */}
+           
+        
                <div class="g-col-12">
-                     <img class="center" style={{height: 220 + "px",width:220 + "px"}} src={product.image} className="card-img-top" alt={product.name} title={product.name}/>
+                     <img  class="center" style={{height: 220 + "px",width:220 + "px"}} src={product.image} className="card-img-top" alt={product.name} title={product.name}/>
                     <p>by Vizuri store</p>
-                    <h5 className="card-title"><b>{product.name}</b></h5><br/>
-                    <figcaption>
-                       <b>Price: $</b> <cite title="Source Title"><b>{product.price}</b></cite>
-                    </figcaption>
-                    <p><b></b>{product.description}</p>
-                    <button className="btn-length" class="btn btn-info" onClick={addToCart}>Add to Cart</button>
+                 
                 </div>
-         
+                </>
     )
 
     
