@@ -165,10 +165,30 @@ div.intro{
   font-size: 10px;
   
 }
-div.purchasesholder{
+.payment{
+  display: flex;
+  width: 100vw
+
+}
+div.card{
+  position: absolute;
+  right: 0px;
+  top: 70px;
+  left: 55vw;
+  width: 500px;
+}
+.checks{
+  display: flex;
+  padding-left: 100px;
+}
+.checker{
+ 
+  padding-left: 50px;
+}
+/* div.purchasesholder{
   overflow-y: scroll;
   height: 50vh;
-}
+} */
 p.us{
   text-align: center;
   margin-left: 300px;

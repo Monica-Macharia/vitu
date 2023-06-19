@@ -53,11 +53,19 @@
  top: 2%; 
      border: 1px solid rgba(177, 172, 172, 1);  
 }
+.table{
+   
+}
 
 .item-card {
     border-bottom: 1px solid black ;
     width: 350px;
     
+}
+img.size{
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
 }
 
 .quantity-count {

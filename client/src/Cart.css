@@ -1,13 +1,15 @@
 
-
+table.table{
+    margin-top: 90px;
+    width: 40%;
+}
 
  .purchasesholder {
     position: absolute;
-    width: 90vw;
-    height: 70%;
+    width: 50vw;
+    height: 90vh;
     left: 60px;
     top: 175px;
-    stroke: rgb(109, 106, 106);
     border: 1px solid rgb(174, 168, 168);
     border-radius: 1%;
     font-family: bs-font-sans-serif;
@@ -15,7 +17,7 @@
 .card-img-top{
     width: 10px;
 }
-.purchasessummary {
+div.purchasessummary {
     position: absolute;
     width: 35%;
     height: 370px;
@@ -88,8 +90,8 @@ button:hover {
     border-radius: 1px 1px 0px 0px;
 }
 
-.items-loop {
+/* .items-loop {
     position: absolute;
     top: 50px;
     padding: 30px;
-} 
+}  */

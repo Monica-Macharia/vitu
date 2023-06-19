@@ -3,168 +3,110 @@ import "./CartItems.css";
 
 function CartItem() {
     const [ waitItems, setWaitItems] = useState([])
-        useEffect(() => {
+    const [totalPrice, setTotalPrice] = useState(0);
+    useEffect(() => {
             fetch("/carts")
             .then(res => res.json())
             .then(data => {
                setWaitItems(data);
               
             } )
-        }, [])
-        return (
-                    <>
-                    {/* {waitItems.map((cart, index)=>
-                       
-                                
-                                <p class="card-text">{cart.name}</p>
-                                 )} */}
+            let total = 0;
+            for (const cart of waitItems) {
+              total += cart.price;
+            }
+            setTotalPrice(total);
+           
+        }, [waitItems])
+         
+      
+        
 
+        return (
+  <div className="payment">
+   
+        
                     
 <table class="table">
   <thead>
     <tr>
       <th scope="col">Product</th>
       <th scope="col">Image</th>
-      <th scope="col">Price</th>
-      <th scope="col">Quanity</th>
-      <th scope="col">Total</th>
+      <th scope="col">Price ($)</th>
+     
     </tr>
   </thead>
   <tbody class="table-group-divider">
      {waitItems.map((cart, index)=>
      <tr>
-     <td scope="row">{cart.id}</td>
-     <td><img src={cart.image} alt={cart.name}/></td>
+     <td scope="row">{cart.name}</td>
+     <td><img className="size" src={cart.image} alt={cart.name}/></td>
       <td>{cart.price}</td>
-      <td></td>
-      <td></td>
+     
+
+    
     </tr>
     )}
    
+    
   </tbody>
 </table>  
+
+<div className="checkout" class="card" >
+<div className="checks">
+<div class="form-check ">
+  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" ></input>
+  <label class="form-check-label" for="flexRadioDefault1">
+    Home Delivery
+  </label>
+</div>
+<div class="form-check ">
+  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" ></input>
+  <label class="form-check-label" for="flexRadioDefault2">
+    Pick-up
+  </label>
+</div>
+</div>
+<h4 className="checker">Total ($): {totalPrice} </h4>
+<h4 className="checker">Sales Tax ($): 60 </h4>
+<h3 className="checker"> GrandTotal : ${totalPrice - 60} </h3>
+<button class="btn btn-info">Checkout</button>
+</div>
+
+{/* <div className="product-display" >
+{waitItems.map((cart, index)=>
+                <div class="row g-0"> 
+                <img  class="img-fluid rounded-start"  
+                src={cart.image} 
+                key={index}
+                className="card-img-top" 
+                alt={cart.name}
+                title={cart.name} />
+                
+                <div className="info">
+                        <h5 class="card-text" ><b>{cart.name}</b></h5><br/>
+                    <figcaption>
+                       <b>Price: $</b> <cite title="Source Title"><b>{cart.price}</b></cite>
+                    </figcaption>
+                    
+                    <input placeholder="Insert Quantity eg: 1" />
+                    <p>Total:</p>
+
+                </div>
+               </div>
+            
+        
+         
+        //  
+        
+        
+        </div> */}
+
                         
-                    </>
+</div>
             
                ) }
 
-// function CartItem({ item, setCartItems}) {
-    
-//     useEffect(() => {
-//         fetch("/products")
-//         .then(res => res.json())
-//         .then(data => {
-//            setCartItems(data);
-//            if (data.length > 0) {
-//             setCartItems(data[0]);
-//           }
-//         } )
-//     }, [])
-//     // const [addQ, setAddQ] = useState(item.quantity)
-//     // const [onConfirm, setOnconfirm] = useState(false)
-//     // function handleAdd(){
-//     //     setAddQ(() => addQ + 1)
-//     // }
-
-//     // function handleReduce(){
-//     //     if (addQ > 1) {
-//     //         setAddQ(() => addQ - 1)
-//     //     }else if (addQ === 1) {
-//     //         setAddQ(1)
-//     //     }
-//     // }
-
-//     // // let totals = 0;
-    
-
-//     // // for (let i = 0; i < item.length; i++){
-//     // //     let price = item.product.price
-//     // //     let sum = addQ * price[i]
-//     // //     totals += sum
-//     // // }
-//     // const confirmColor = onConfirm? "button-confirm-green":"button-confirm-red"
-//     // function handleDelete() {
-//     //     setOnconfirm(!onConfirm)
-//     // }
-//     return (
-//         <>
-//         {item.map((cart, index)=>
-           
-                    
-//                     <p class="card-text">{cart.name}</p>
-//                      )}
-          
-            
-//         </>
-
-//    ) }
-// //         <table class="table" >
-// //                 <thead>
-// //                     <tr>
-// //                     <th class="width" scope="col">Product</th>
-// //                     <th class="width" scope="col">Price</th>
-// //                     <th class="width" scope="col">Quantity</th>
-// //                     <th class="width" scope="col">Total</th>
-// //                     </tr>
-// //                 </thead>
-// //                 <tbody>
-// //                     <tr>
-// //                     <th scope="row">
-// //                     <div className="padding" class="card" >
-                    
-                        
-// //                         </div>
-                       
-// //                     </th>
-// //                     <td>
-// //                         {item.map((cart, index)=>(
-// //                         <img src={cart.image} className="cardrow" alt="product"/>
-                       
-// //                     <p class="card-text">{cart.name}</p>
-// //                      ))}
-// //                      <td>
-                       
-// // {/* 
-// //                     <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
-// //                         <input  onClick={handleAdd} type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked/>
-// //                         <label class="btn btn-outline-primary" for="btnradio1">+</label>
-
-// //                         <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off"/>
-// //                         <label class="btn btn-outline-primary" for="btnradio2">{addQ}</label>
-
-// //                         <input onClick={handleReduce} type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off"/>
-// //                         <label class="btn btn-outline-primary" for="btnradio3">-</label>
-// //                     </div> */}
-
-
-// //                     {/* <button  onClick={handleAdd}><strong>+</strong></button>
-// //                     <div ><h1 >{addQ}</h1>
-// //                     <button  onClick={handleReduce}>-</button>
-                    
-// //                     </div> */}
-                 
-                  
-// //                     </tr>
-// //                     </tbody>
-// //                     <h2>Subtotals:{}</h2>
-
-
-// //       {/* </table>
-// //         // <div className="item-card" class="card mb-3" >
-// //         //     <img style={{height: 50 + "px",width:50 + "px"}} src={item.product.image} className="card-img-top" alt={item.product.name} title={item.product.name}/>
-// //         //     <h1 className="item-title">{item.product.name}</h1>
-// //         //     <h1 className="item-title">Price: ${item.product.price}</h1>
-// //         //     <div class="col-md-8"><h1  className="quantity-count">{addQ}</h1>
-// //         //     <button  className="button-add" onClick={handleAdd}><strong>+</strong></button>
-// //         //     <button className="button-reduce" onClick={handleReduce}>-</button>
-// //         //     <button  className={confirmColor} onClick={handleDelete} >{onConfirm? "confirmed!":"confirm"}</button>
-// //         //     <p>Total:{addQ * item.product.price}</p>
-// //         //     </div>
-// //         //     {/* <div>
-// //         //         <div className="item-line"></div>
-// //         //     </div> */}
-// //         {/* </div>
-// //     ) */}
-// //  
+ 
 
 export default CartItem;

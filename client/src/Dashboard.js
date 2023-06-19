@@ -1,21 +1,21 @@
 import React from 'react';
 // import { useNavigate } from 'react-router-dom'
-import {useEffect, useState} from 'react'
+
 import './Cart.css';
 import CartItem from './CartItems';
 
 function Dashboard(){
 
 
-    const [purchases, setPurchases] =useState([])
-    useEffect(fetchPurchases, [])
+    // const [purchases, setPurchases] =useState([])
+    // useEffect(fetchPurchases, [])
     
     
-    function fetchPurchases(){
-        fetch('/purchases')
-        .then(r => r.json())
-        .then(data => setPurchases(data))
-    }
+    // function fetchPurchases(){
+    //     fetch('/purchases')
+    //     .then(r => r.json())
+    //     .then(data => setPurchases(data))
+    // }
     // const navigate = useNavigate();
     // const handlelogout = () => {
     // navigate('/login')
@@ -31,11 +31,9 @@ function Dashboard(){
             <div className='purchasesholder'>
                 <div className='grey-topbar'><strong id='summary-header'>Item list</strong></div>
                 <div className='items-loop'>
-                {purchases.map(item => {
-                    return (
-                        <CartItem item = {item}/>
-                    )
-                })}
+                
+                        <CartItem />
+                 
                 </div>   
             </div>
             {/* <div className='purchasessummary'>
