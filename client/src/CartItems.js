@@ -4,22 +4,32 @@ import "./CartItems.css";
 function CartItem() {
     const [ waitItems, setWaitItems] = useState([])
     const [totalPrice, setTotalPrice] = useState(0);
+   
     useEffect(() => {
-            fetch("/carts")
-            .then(res => res.json())
-            .then(data => {
-               setWaitItems(data);
-              
-            } )
-            let total = 0;
-            for (const cart of waitItems) {
-              total += cart.price;
-            }
-            setTotalPrice(total);
-           
-        }, [waitItems])
-         
-      
+      fetch("/carts")
+        .then((res) => res.json())
+        .then((data) => {
+          setWaitItems(data);
+        });
+    }, []);
+  
+    useEffect(() => {
+      let total = 0;
+      for (const cart of waitItems) {
+        total += cart.price;
+      }
+      setTotalPrice(total);
+    }, [waitItems]);
+  
+    function handleDelete(cartId) {
+      fetch(`/carts/${cartId}`, {
+        method: "DELETE",
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
+      setWaitItems(waitItems.filter((cart) => cart.id !== cartId));
+    }
         
 
         return (
@@ -33,7 +43,7 @@ function CartItem() {
       <th scope="col">Product</th>
       <th scope="col">Image</th>
       <th scope="col">Price ($)</th>
-     
+      <th scope="col"></th>
     </tr>
   </thead>
   <tbody class="table-group-divider">
@@ -42,6 +52,7 @@ function CartItem() {
      <td scope="row">{cart.name}</td>
      <td><img className="size" src={cart.image} alt={cart.name}/></td>
       <td>{cart.price}</td>
+      <button  onClick={() => handleDelete(cart.id)} class="btn btn-danger">Remove from Cart</button>
      
 
     
@@ -61,15 +72,15 @@ function CartItem() {
   </label>
 </div>
 <div class="form-check ">
-  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" ></input>
+  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked ></input>
   <label class="form-check-label" for="flexRadioDefault2">
     Pick-up
   </label>
 </div>
 </div>
-<h4 className="checker">Total ($): {totalPrice} </h4>
-<h4 className="checker">Sales Tax ($): 60 </h4>
-<h3 className="checker"> GrandTotal : ${totalPrice - 60} </h3>
+<p className="checker">Total: ${totalPrice} </p>
+<p className="checker">Sales Tax: $60 </p>
+<p className="checker"><b> GrandTotal : ${totalPrice - 60} </b></p>
 <button class="btn btn-info">Checkout</button>
 </div>
 

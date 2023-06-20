@@ -27,7 +27,7 @@ function ProductDisplay({selectImage, index}){
               })
                 .then(response => {
                   if (response.ok) {
-                   console.log("updated")
+                  window.alert("Sucessfully added to Cart")
                   } else {
                     console.log('Failed to add item to cart:', response.status);
                   }
@@ -57,7 +57,7 @@ return(
                     <figcaption>
                        <b>Price: $</b> <cite title="Source Title"><b>{selectImage.price}</b></cite>
                     </figcaption>
-                    <p><b></b>{selectImage.description}</p>
+                    <p><b>{selectImage.description}</b></p>
                     <button  onClick={() => handleButtonClick(selectImage)} className="btn-length" class="btn btn-info">Add to Cart</button>
 
                 </div>

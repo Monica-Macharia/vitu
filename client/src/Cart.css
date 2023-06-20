@@ -2,17 +2,20 @@
 table.table{
     margin-top: 90px;
     width: 40%;
+    overflow: scroll;
 }
 
  .purchasesholder {
     position: absolute;
-    width: 50vw;
+   width: 90vw;
+   padding: 20px;
     height: 90vh;
     left: 60px;
     top: 175px;
     border: 1px solid rgb(174, 168, 168);
     border-radius: 1%;
     font-family: bs-font-sans-serif;
+    overflow: scroll;
 }
 .card-img-top{
     width: 10px;
