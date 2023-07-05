@@ -2,7 +2,7 @@
 
 <div align="center">
    <a href="https://github.com/davidnene/vitu-vizuri">
-    <img src="https://i.ibb.co/K2Ks1WH/acdaaf3def5f4517b48390e0fcf2fb5d.png" />
+   
     </a>
 </div>
 
