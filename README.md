@@ -1,11 +1,5 @@
 # Vituvizuri
 
-<div align="center">
-   <a href="https://github.com/davidnene/vitu-vizuri">
-   
-    </a>
-</div>
-
 ## Live Demo
 
 [project1.webm](https://github.com/Monica-Macharia/vitu/assets/106350290/1d1d2807-0b4f-4942-a210-84f34ca730e5)
