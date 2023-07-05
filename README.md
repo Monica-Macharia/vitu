@@ -8,9 +8,7 @@
 
 ## Live Demo
 
-```shell
-    
-```
+[project1.webm](https://github.com/Monica-Macharia/vitu/assets/106350290/1d1d2807-0b4f-4942-a210-84f34ca730e5)
 
 <div align="center">
 
@@ -24,7 +22,7 @@
 
 
 
-> Vituvizuri is  an ecommerce  web interface that can be used for obtaing  diffrent fashion designers. The web deals with a large range a of product from hoodies to shoes and provides apatform where a user can obtain diffrent desinges of there choice deDeveloped on there test.
+> Vituvizuri is  an e-commerce  web interface that can be used for obtaining  different fashion designers. The web deals with a large range of products from hoodies to shoes and provides a platform where user can obtain different designs of their choice deDeveloped on their test.
 
 > The source code is open so that you can download the source code and set it up with ease if you would like to have your own exclusive environment.
 
@@ -40,15 +38,15 @@
 ## Folder Structure
 ## What (This Vituvizuri) ?
 
-The concept behind vituvizuri app was to help designers createn a platform 
-where they can showase there products and also help university students  .
+The concept behind Vituvizuri app was to help designers create a platform 
+where they can showcase there products and also help university students .
 
 
 ## What (The advantage) ?
 
-- The app's responsive web interface helps you to browse products  in any resolution device.
+- The app's responsive web interface helps you to browse products on any resolution device.
 
-## The project has been Developed and works in: 
+## The project has been developed and works in: 
 
 ### Platforms
 
